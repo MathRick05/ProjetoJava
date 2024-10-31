@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Mochila "1" <-- "many" Itens
+
+class Mochila{
+    -Integer : capacidadeMax
+    -Integer : numItens
+    -Itens : itens
+}
+
+class Itens{
+   -String : nome
+   -Integer : peso
+   -Integer : valor
+}
+@enduml
